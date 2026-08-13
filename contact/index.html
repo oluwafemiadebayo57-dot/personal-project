@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Get in Touch · Benedict</title>
+  <meta name="description" content="Contact Benedict – fullstack & mobile developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVIGATION BAR -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="/landing-page/index4.html" class="nav-link">Work</a></li>
+        <li><a href="/about-page/index.html" class="nav-link">About</a></li>
+        <li><a href="/notes-page/index.html" class="nav-link">Notes</a></li>
+        <li><a href="/contact/index.html" class="nav-link active">Contact</a></li>
+        <li><span class="mode-toggle" id="modeToggle"><i class="fa-regular fa-moon"></i></span></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="contact-wrapper">
+    <div class="contact-content">
+      <!-- LEFT: FORM -->
+      <section class="contact-form">
+        <h1 class="form-title">Get in Touch.</h1>
+        <p class="form-intro">
+          Have a project you'd like to discuss, an opportunity to share, or just want to say hello? Fill out the form below and I'll get back to you as soon as I can.
+        </p>
+
+        <form id="contactForm" class="contact-form__fields" novalidate>
+          <!-- Web3Forms Configuration -->
+          <input type="hidden" name="access_key" value="34e7250a-911c-401b-af9e-caf27137ac01">
+          <input type="hidden" name="subject" value="New Contact Form Submission from Benedict Portfolio">
+          <input type="hidden" name="from_name" value="Benedict Portfolio Contact Form">
+          <!-- Optional: Add redirect after success -->
+          <!-- <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html"> -->
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">LAST NAME</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">SUBJECT</label>
+            <input type="text" id="subjectField" name="subjectField" placeholder="Project inquiry" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+          </div>
+
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+
+        <div class="social-pref">
+          <h3>Prefer Social?</h3>
+          <ul class="social-icons">
+            <li><a href="https://github.com/oluwafemi-adebayo"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/oluwafemi-adebayo-6716b23a6?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/ab__phics?igsh=cThmdHA3OWdqbjVi&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="mailto:oluwafemiadebayo57@gmail.com"><i class="fas fa-envelope"></i> oluwafemiadebayo57@gmail.com</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- RIGHT: INFO PANEL -->
+      <aside class="contact-info">
+        <div class="info-brand">
+          <p class="brand-name">Benedict</p>
+          <p class="brand-tagline">
+            Fullstack &amp; mobile developer building high-quality web and native experiences — from React to React Native.
+          </p>
+        </div>
+
+        <nav class="info-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/landing-page/index4.html">Home</a></li>
+            <li><a href="/about-page/index.html">About</a></li>
+            <li><a href="/notes-page/index.html">Notes</a></li>
+            <li><a href="/contact/index.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="info-contact">
+          <h4>Get in Touch</h4>
+          <p><a href="mailto:oluwafemiadebayo57@gmail.com">oluwafemiadebayo57@gmail.com</a></p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
